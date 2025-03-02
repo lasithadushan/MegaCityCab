@@ -4,27 +4,27 @@
 <html>
 <head>
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/admindashboard.css">
 </head>
 <body>
-    <h1>Admin Dashboard</h1>
-    <p> Welcome Admin!!! </p>
-    <div class="dashboard-container">
-        <div class="box">
-            <h2>User Management</h2>
-            <p>Manage and oversee user accounts, ensuring proper access and permissions</p>
-            <a href="manageUsers.jsp">
-            <button class="btn">Go to User Management</button> </a>
-        </div>
-        <div class="box">
-            <h2>System Configuration</h2>
-            <p>Modify system settings and configurations for optimal performance</p>
-            <a href="systemSettings.jsp">
-            <button class="btn">Go to System Settings</button> </a>
-        </div>
+    <h1>Welcome Admin</h1>
+    <p>Welcome to the Admin Dashboard</p>
+    
+    <!-- Admin-specific content -->
+    <div>
+        <h3>Manage Users</h3>
+        <p>Here you can manage user accounts.</p>
+        <a href="manageUsers.jsp">Go to User Management</a>
     </div>
     
-    <a href="/MegaCityCab/LogoutServlet">
-    <button class="logout-btn">Logout</button> </a>
+    <div>
+        <h3>System Settings</h3>
+        <p>Manage system settings and configurations.</p>
+        <a href="systemSettings.jsp">Go to System Settings</a>
+    </div>
+
+    <div>
+        <a href="/MegaCityCab/LogoutServlet">Logout</a>
+    </div>
 </body>
 </html>

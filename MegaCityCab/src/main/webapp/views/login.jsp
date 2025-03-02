@@ -2,28 +2,23 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="../css/Login.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
-
 <body>
-    <div class="login-container">
+    <form action="/MegaCityCab/Loginservlet" method="post">
         <h2>Login</h2>
-        <form action="/MegaCityCab/Loginservlet" method="post">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" class="login-button">Login</button>
-            
-            <% if (request.getParameter("error") != null) { %>
+        <label>Username:</label>
+        <input type="text" name="username" required>
+        
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        
+        <button type="submit">Login</button>
+        
+        <% if (request.getParameter("error") != null) { %>
             <p style="color:red;">${param.error}</p>
         <% } %>
-        </form>
-        <p class="register-link">Don't have an account? <a href="register.jsp">Register</a></p>
-    </div>
+    </form>
+    <a href="register.jsp">Don't have an account? Register here</a>
 </body>
 </html>

@@ -8,7 +8,7 @@
 <html>
 <head>
     <title>View Bookings</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/viewbookings.css">
 </head>
 <body>
     <h2>Customer Bookings</h2>
@@ -59,5 +59,10 @@
         </tbody>
     </table>
     <% } %>
+    
+    <button type="button" class="center-button" onclick="window.location.href='homedashboard.jsp'">Back</button>
+
+    
+    
 </body>
 </html>

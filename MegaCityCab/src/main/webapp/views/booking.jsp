@@ -47,14 +47,11 @@
         }
     </script>
 </head>
-
 <body>
-    <div class="container">
-        <h1>Book a Ride</h1>
-        <form action="/MegaCityCab/BookingServlet" method="post" onsubmit="return validateForm()">
-            <div class="form-group">
-                <label for="pickup">Pickup Location</label>
-                <select id="pickup" name="pickup" onchange="calculateFare()" required>
+    <h2>Book a Ride</h2>
+    <form action="/MegaCityCab/BookingServlet" method="post" onsubmit="return validateForm()">
+        <label for="pickup">Pickup Location:</label>
+        <select id="pickup" name="pickup" onchange="calculateFare()" required>
             <%
                 LocationDAO locationDAO = new LocationDAO();
                 List<String> locations = locationDAO.getLocationNames();
@@ -63,11 +60,9 @@
             <option value="<%= location %>"><%= location %></option>
             <% } %>
         </select>
-        
-            </div>
-            <div class="form-group">
-                <label for="destination">Destination</label>
-                <select id="destination" name="destination" onchange="calculateFare()" required>
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" onchange="calculateFare()" required>
             <%
                 for (String location : locations) {
             %>
@@ -75,13 +70,15 @@
             <% } %>
         </select>
 
-            </div>
-            <div class="form-group">
-                <label for="fare">Estimated Fare (Rs)</label>
-                <input type="text" id="fare" name="fare" readonly>
-            </div>
-            <button type="submit" class="btn">Book Now</button>
-        </form>
-    </div>
+        <label for="fare">Estimated Fare (Rs):</label>
+        <input type="text" id="fare" name="fare" readonly>
+
+        <button type="submit">Book Now</button>
+        
+        
+        <button type="button" onclick="window.location.href='homedashboard.jsp'">Back</button>
+       
+        
+    </form>
 </body>
 </html>

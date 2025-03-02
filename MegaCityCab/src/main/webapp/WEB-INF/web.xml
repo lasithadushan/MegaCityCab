@@ -62,5 +62,15 @@
     <session-timeout>20</session-timeout> <!-- Time in minutes -->
 </session-config>
 
+<servlet>
+    <servlet-name>AdminDashboardServlet</servlet-name>
+    <servlet-class>AdminDashboardServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminDashboardServlet</servlet-name>
+    <url-pattern>/adminDashboard</url-pattern>
+</servlet-mapping>
+
+
 </web-app>
 </element>

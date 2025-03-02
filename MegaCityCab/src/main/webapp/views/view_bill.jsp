@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>View Bill</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/view_bill.css">
 </head>
 <body>
     <h2>Bill Details</h2>
