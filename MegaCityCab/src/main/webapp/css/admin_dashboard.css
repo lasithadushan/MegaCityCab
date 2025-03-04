@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #E3F2FD, #A5D6A7);
+    color: #2E7D32;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #A5D6A7, #E3F2FD);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #2E7D32;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+header p {
+    color: #388E3C;
+    font-size: 18px;
+}
+
+/* Dashboard Sections */
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+.section h3 {
+    color: #2E7D32;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    color: #388E3C;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #2E7D32, #66BB6A);
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #66BB6A, #2E7D32);
+    transform: scale(1.05);
+}
+
+/* Logout Button */
+.logout {
+    margin-top: 20px;
+}
+
+.logout-btn {
+    background: #E53935;
+}
+
+.logout-btn:hover {
+    background: #C62828;
+}
