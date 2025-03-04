@@ -27,31 +27,54 @@
 </servlet-mapping>
 
 
- <servlet>
+  <!-- LoginServlet Mapping -->
+  <servlet>
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>controller.LoginServlet</servlet-class>
-</servlet>
-<servlet-mapping>
+  </servlet>
+  <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
-    <url-pattern>/views/LoginServlet</url-pattern>
-</servlet-mapping>
+    <url-pattern>/Loginservlet</url-pattern>
+  </servlet-mapping>
 
-  
-  <servlet>
-    <servlet-name>dashboardServlet</servlet-name>
-    <servlet-class>controller.dashboardServlet</servlet-class>
+<!-- BookingServlet Mapping -->
+<servlet>
+    <servlet-name>BookingServlet</servlet-name>
+    <servlet-class>controller.BookingServlet</servlet-class>
 </servlet>
-<servlet-mapping>
-    <servlet-name>dashboardServlet</servlet-name>
-    <url-pattern>/dashboard</url-pattern>
-</servlet-mapping>
-
 <servlet-mapping>
     <servlet-name>BookingServlet</servlet-name>
     <url-pattern>/BookingServlet</url-pattern>
 </servlet-mapping>
 
- 
+
+ <!-- AddCarServlet Mapping -->
+  <servlet>
+    <servlet-name>AddCarServlet</servlet-name>
+    <servlet-class>controller.AddCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCarServlet</servlet-name>
+    <url-pattern>/AddCarServlet</url-pattern>
+  </servlet-mapping>
+
+
+
+  <!-- AddDriverServlet Mapping -->
+  <servlet>
+    <servlet-name>AddDriverServlet</servlet-name>
+    <servlet-class>controller.AddDriverServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddDriverServlet</servlet-name>
+    <url-pattern>/AddDriverServlet</url-pattern>
+  </servlet-mapping>
+
+
+
+ <session-config>
+    <session-timeout>20</session-timeout> <!-- Time in minutes -->
+</session-config>
 
 </web-app>
 </element>

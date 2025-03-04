@@ -1,44 +1,92 @@
 package model;
 
-import java.sql.Date;
-import java.sql.Time;
+import java.sql.Timestamp;
 
 public class Booking {
     private int bookingId;
-    private int userId;
-    private int vehicleId;
+    private String customerName;
     private String pickupLocation;
-    private String dropoffLocation;
-    private Date rideDate;
-    private Time rideTime;
+    private String destination;
+    private double fare;
     private String status;
+    private Timestamp bookingTime;
 
-    // Constructor
-    public Booking(int userId, int vehicleId, String pickupLocation, String dropoffLocation, Date rideDate, Time rideTime, String status) {
-        this.userId = userId;
-        this.vehicleId = vehicleId;
+    // Constructor to initialize the booking object
+    public Booking(int bookingId, String customerName, String pickupLocation, String destination, double fare, String status, Timestamp bookingTime) {
+        this.bookingId = bookingId;
+        this.customerName = customerName;
         this.pickupLocation = pickupLocation;
-        this.dropoffLocation = dropoffLocation;
-        this.rideDate = rideDate;
-        this.rideTime = rideTime;
+        this.destination = destination;
+        this.fare = fare;
+        this.status = status;
+        this.bookingTime = bookingTime;
+    }
+
+    // Default constructor
+    public Booking() {
+    }
+
+    // Getter methods
+    public int getBookingId() {
+        return bookingId;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public String getPickupLocation() {
+        return pickupLocation;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public double getFare() {
+        return fare;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public Timestamp getBookingTime() {
+        return bookingTime;
+    }
+
+    // Setter methods
+    public void setBookingId(int bookingId) {
+        this.bookingId = bookingId;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public void setPickupLocation(String pickupLocation) {
+        this.pickupLocation = pickupLocation;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+
+    public void setFare(double fare) {
+        this.fare = fare;
+    }
+
+    public void setStatus(String status) {
         this.status = status;
     }
 
-    // Getters and Setters
-    public int getBookingId() { return bookingId; }
-    public void setBookingId(int bookingId) { this.bookingId = bookingId; }
-    public int getUserId() { return userId; }
-    public void setUserId(int userId) { this.userId = userId; }
-    public int getVehicleId() { return vehicleId; }
-    public void setVehicleId(int vehicleId) { this.vehicleId = vehicleId; }
-    public String getPickupLocation() { return pickupLocation; }
-    public void setPickupLocation(String pickupLocation) { this.pickupLocation = pickupLocation; }
-    public String getDropoffLocation() { return dropoffLocation; }
-    public void setDropoffLocation(String dropoffLocation) { this.dropoffLocation = dropoffLocation; }
-    public Date getRideDate() { return rideDate; }
-    public void setRideDate(Date rideDate) { this.rideDate = rideDate; }
-    public Time getRideTime() { return rideTime; }
-    public void setRideTime(Time rideTime) { this.rideTime = rideTime; }
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+    public void setBookingTime(Timestamp bookingTime) {
+        this.bookingTime = bookingTime;
+    }
+
+    @Override
+    public String toString() {
+        return "Booking [bookingId=" + bookingId + ", customerName=" + customerName + ", pickupLocation=" + pickupLocation
+                + ", destination=" + destination + ", fare=" + fare + ", status=" + status + ", bookingTime=" + bookingTime + "]";
+    }
 }
