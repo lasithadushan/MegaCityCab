@@ -54,7 +54,7 @@ public class CalculateFareServlet extends HttpServlet {
         // Replace the below database connection parameters with your own
         String dbUrl = "jdbc:mysql://localhost:3306/MegaCityCab?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
         String dbUser = "root";
-        String dbPassword = "kavindu";
+        String dbPassword = "12345678";
 
         try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
              PreparedStatement stmt = connection.prepareStatement(query)) {

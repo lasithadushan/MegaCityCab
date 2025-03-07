@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF2DB; /* Light beige background */
+    color: #003092; /* Dark blue text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+form {
+    background-color: #FFFFFF; /* White background for the form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    font-size: 28px;
+    color: #003092; /* Dark blue for heading */
+    margin-bottom: 30px;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #00879E; /* Teal color for labels */
+}
+
+/* Select Fields */
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #00879E;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #FFF2DB; /* Light background for selects */
+    color: #003092; /* Text color */
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #00879E;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #FFF2DB; /* Light background for inputs */
+    color: #003092; /* Text color */
+    text-align: center;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #003092; /* Dark blue for the button */
+    color: #FFF2DB; /* Light text */
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Button */
+button[type="submit"]:hover {
+    background-color: #FFAB5B; /* Orange background on hover */
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Styling for the dropdown select options */
+select option {
+    color: #003092; /* Dark blue for option text */
+}

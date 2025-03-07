@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFF2DB; /* Soft beige background */
+    color: #003092; /* Dark blue text */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Section */
+h2 {
+    font-size: 32px;
+    color: #003092; /* Dark blue for heading */
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #FFFFFF; /* White background for the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header Styling */
+th {
+    background-color: #003092; /* Dark blue for table headers */
+    color: #FFF2DB; /* Light text color */
+    padding: 12px;
+    font-size: 18px;
+}
+
+/* Table Row Styling */
+td {
+    padding: 12px;
+    border: 1px solid #00879E; /* Teal border for table cells */
+    color: #003092; /* Dark blue text color */
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+    background-color: #FFAB5B; /* Orange background on hover */
+    color: #FFF2DB; /* Light text color on hover */
+}
+
+/* Back Button Styling */
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.back-button {
+    background-color: #003092; /* Dark blue for back button */
+    color: #FFF2DB; /* Light text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Back Button */
+.back-button:hover {
+    background-color: #00879E; /* Teal on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+
+    .back-button {
+        font-size: 14px;
+    }
+}

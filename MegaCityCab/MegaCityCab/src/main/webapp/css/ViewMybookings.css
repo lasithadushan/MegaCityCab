@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFF2DB; /* Soft beige background */
+    color: #003092; /* Dark blue text */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Section */
+h2 {
+    font-size: 32px;
+    color: #003092; /* Dark blue for heading */
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #FFFFFF; /* White background for the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header Styling */
+th {
+    background-color: #003092; /* Dark blue for table headers */
+    color: #FFF2DB; /* Light beige text */
+    padding: 12px;
+    font-size: 18px;
+}
+
+/* Table Row Styling */
+td {
+    padding: 12px;
+    border: 1px solid #00879E; /* Teal border for table cells */
+    color: #003092; /* Dark blue text */
+    font-size: 16px;
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+    background-color: #FFAB5B; /* Orange background on hover */
+    color: #FFF2DB; /* Light text color on hover */
+}
+
+/* Action Links Styling */
+a {
+    color: #00879E; /* Teal for action links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #003092; /* Dark blue on hover for links */
+}
+
+/* Message Styling */
+p {
+    color: green;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Back Button Styling in Upper Right Corner */
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+button[type="button"] {
+    background-color: #003092; /* Dark blue for back button */
+    color: #FFF2DB; /* Light text color */
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Back Button */
+button[type="button"]:hover {
+    background-color: #00879E; /* Teal on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+
+    button[type="button"] {
+        font-size: 14px;
+    }
+}

@@ -2,8 +2,8 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FFF2DB; /* Light beige background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFF2DB; /* Soft beige background (matches the color from the image) */
     color: #003092; /* Dark blue text */
     margin: 0;
     padding: 0;
@@ -17,18 +17,20 @@ body {
 /* Form Container */
 form {
     background-color: #FFFFFF; /* White background for the form */
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    margin: 0 auto;
 }
 
 /* Heading */
 h2 {
-    font-size: 28px;
-    color: #003092; /* Dark blue for heading */
-    margin-bottom: 20px;
+    font-size: 32px;
+    color: #003092; /* Dark blue for the title */
+    margin-bottom: 30px;
+    font-weight: 600;
 }
 
 /* Label Styles */
@@ -36,61 +38,72 @@ label {
     display: block;
     font-size: 16px;
     margin-bottom: 8px;
-    color: #00879E; /* Teal color for labels */
+    color: #00879E; /* Teal for labels */
+    text-align: left;
 }
 
 /* Input Fields */
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"], textarea {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     font-size: 16px;
     border: 2px solid #00879E;
-    border-radius: 6px;
+    border-radius: 8px;
     margin-bottom: 20px;
-    background-color: #FFF2DB; /* Light background for inputs */
+    background-color: #FFFFFF; /* White background for inputs */
     color: #003092; /* Text color */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 /* Focused Input Fields */
-input[type="text"]:focus, input[type="password"]:focus {
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
     border-color: #FFAB5B; /* Orange border on focus */
+    background-color: #FFF7E1; /* Light yellow background when focused */
     outline: none;
 }
 
-/* Submit Button */
+/* Submit Button Styling */
 button[type="submit"] {
-    background-color: #003092; /* Dark blue for the button */
-    color: #FFF2DB; /* Light text for the button */
-    padding: 12px 20px;
+    background-color: #003092; /* Dark blue for buttons (matches the button color in the image) */
+    color: #FFF2DB; /* Light text color */
+    padding: 14px 24px;
     font-size: 18px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     width: 100%;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* Hover Effect for Button */
 button[type="submit"]:hover {
-    background-color: #FFAB5B; /* Orange background on hover */
+    background-color: #FFAB5B; /* Orange on hover */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
-/* Error Message */
+/* Link Styling */
 p {
-    color: red;
+    margin-top: 20px;
     font-size: 14px;
-    margin-top: 10px;
 }
 
-/* Register Link */
 a {
-    display: block;
-    margin-top: 15px;
-    font-size: 14px;
     color: #00879E; /* Teal color for the link */
     text-decoration: none;
+    font-weight: 600;
 }
 
 a:hover {
-    color: #003092; /* Dark blue hover effect for the link */
+    color: #003092; /* Dark blue hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
 }
