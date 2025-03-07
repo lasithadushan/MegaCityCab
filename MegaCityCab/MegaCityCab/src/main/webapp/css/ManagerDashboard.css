@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFF2DB; /* Soft beige background */
+    color: #003092; /* Dark blue text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container for the dashboard */
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #003092; /* Dark blue for the title */
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #00879E; /* Teal for the subtitle */
+    font-size: 18px;
+}
+
+/* Dashboard Content Section */
+.dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Section Styles */
+.section {
+    background-color: #FFFFFF; /* White background for each section */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Section */
+.section:hover {
+    transform: translateY(-10px); /* Slight hover effect for interactivity */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Titles */
+.section h3 {
+    color: #003092; /* Dark blue for section titles */
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section p {
+    color: #8d8d8d; /* Light grey text for description */
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    background-color: #003092; /* Dark blue for buttons */
+    color: #FFF2DB; /* Light text color */
+    text-decoration: none;
+    padding: 14px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #FFAB5B; /* Orange on hover */
+    transform: scale(1.05); /* Slight zoom effect for interactivity */
+}
+
+/* Logout Button Styling */
+.logout-btn {
+    background-color: #8d8d8d; /* Light grey for logout button */
+}
+
+.logout-btn:hover {
+    background-color: #FFAB5B; /* Orange on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        width: 100%;
+    }
+}

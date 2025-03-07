@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF2DB; /* Light beige background */
+    color: #003092; /* Dark blue text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Form Container */
+form {
+    background-color: #FFFFFF; /* White background for the form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading */
+h2 {
+    font-size: 28px;
+    color: #003092; /* Dark blue for heading */
+    margin-bottom: 20px;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #00879E; /* Teal color for labels */
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #00879E;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #FFF2DB; /* Light background for inputs */
+    color: #003092; /* Text color */
+}
+
+/* Focused Input Fields */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #FFAB5B; /* Orange border on focus */
+    outline: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #003092; /* Dark blue for the button */
+    color: #FFF2DB; /* Light text for the button */
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Button */
+button[type="submit"]:hover {
+    background-color: #FFAB5B; /* Orange background on hover */
+}
+
+/* Error Message */
+p {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Register Link */
+a {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #00879E; /* Teal color for the link */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #003092; /* Dark blue hover effect for the link */
+}

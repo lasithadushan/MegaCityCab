@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF2DB; /* Light beige background */
+    color: #003092; /* Dark blue text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container for the dashboard */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #003092; /* Dark blue for the username */
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #00879E; /* Teal color for the welcome message */
+    font-size: 18px;
+}
+
+/* Dashboard Content Section */
+.dashboard-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Section Styles */
+.section {
+    background-color: #FFFFFF; /* White background for each section */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    color: #003092; /* Dark blue for section titles */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    color: #8d8d8d; /* Light grey text for description */
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    background-color: #003092; /* Dark blue for buttons */
+    color: #FFF2DB; /* Light text color */
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FFAB5B; /* Orange on hover */
+}
+
+/* Logout Button Styling */
+.logout-btn {
+    background-color: #8d8d8d; /* Light grey for logout button */
+}
+
+.logout-btn:hover {
+    background-color: #FFAB5B; /* Orange on hover */
+}
+
+/* Center Logout Button */
+.logout {
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

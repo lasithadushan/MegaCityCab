@@ -31,8 +31,10 @@
         <input type="text" name="nic" required><br><br>
 
         <button type="submit">Register</button>
+         <p>Already have an account? <a href="login.jsp">Login here</a></p>
     </form>
 
-    <p>Already have an account? <a href="login.jsp">Login here</a></p>
+   
 </body>
+
 </html>
