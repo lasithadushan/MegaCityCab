@@ -1,105 +1,84 @@
 @charset "UTF-8";
 
-/* General Styles */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #FFF2DB;
-    color: #003092;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
-.container {
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Header */
-h2 {
-    text-align: center;
-    color: #003092;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-/* Form Styles */
 form {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #ffffff;
+    background: white;
     padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
 }
 
-form div {
-    margin-bottom: 15px;
-    text-align: left;
+h2 {
+    color: #003092;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    font-size: 16px;
-    color: #003092;
-    margin-bottom: 5px;
+    text-align: left;
+    font-weight: 700;
+    color: #00879E;
+    margin: 10px 0 5px;
 }
 
-input[type="text"] {
+input, select {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #00879E;
+    border-radius: 5px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #FFF2DB;
-    color: #003092;
-    transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus {
-    border-color: #00879E;
     outline: none;
 }
 
-/* Buttons */
-button[type="submit"], button[type="button"] {
+input:focus, select:focus {
+    border-color: #FFAB5B;
+    box-shadow: 0 0 5px rgba(255, 171, 91, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    background-color: #003092;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #002070;
+}
+
+button[type="button"] {
     background-color: #FFAB5B;
     color: white;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    width: 100%;
-    transition: opacity 0.3s ease, transform 0.1s ease;
-}
-
-button[type="submit"]:hover, button[type="button"]:hover {
-    opacity: 0.8;
-}
-
-button[type="submit"]:active, button[type="button"]:active {
-    transform: scale(0.98);
-}
-
-/* Back Button */
-button[type="button"] {
-    background-color: #00879E;
 }
 
 button[type="button"]:hover {
-    background-color: #005F73;
+    background-color: #e69742;
 }
 
-/* Error Message */
 p {
     color: red;
-    text-align: center;
-    font-size: 16px;
-    margin-top: 10px;
+    font-weight: bold;
+    margin-top: 15px;
 }

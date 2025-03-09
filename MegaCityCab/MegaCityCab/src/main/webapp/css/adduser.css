@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF2DB; /* Soft Cream */
+    color: #003092; /* Dark Blue */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page Titles */
+h2 {
+    font-size: 32px;
+    color: #003092;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    color: #00879E;
+    margin-bottom: 15px;
+}
+
+/* Form Container */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Labels */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00879E;
+    margin-top: 10px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00879E;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #FFF2DB;
+    color: #003092;
+}
+
+/* Submit Button */
+button {
+    background-color: #003092;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFAB5B;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #00879E;
+}
+
+th {
+    background-color: #00879E;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    font-size: 16px;
+    color: #003092;
+}
+
+/* Action Links */
+td a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+td a:first-child {
+    color: white;
+    background-color: #00879E;
+}
+
+td a:first-child:hover {
+    background-color: #FFAB5B;
+}
+
+td a:last-child {
+    color: white;
+    background-color: red;
+}
+
+td a:last-child:hover {
+    background-color: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+}

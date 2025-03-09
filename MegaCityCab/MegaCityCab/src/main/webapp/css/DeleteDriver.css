@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF2DB; /* Light cream background */
+    color: #003092; /* Dark blue text */
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* Centering the text for better focus on confirmation */
+}
+
+h2 {
+    color: #00879E; /* Light blue header */
+}
+
+/* Styling for the confirmation message */
+p {
+    font-size: 1.2em; /* Slightly larger text for importance */
+    margin: 20px auto; /* Spacing for readability */
+    max-width: 600px;
+}
+
+strong {
+    color: #FFAB5B; /* Highlighting the driver name */
+}
+
+/* Form and button styling */
+form {
+    margin: 20px auto;
+    display: inline-block; /* Align form to center */
+}
+
+button[type="submit"] {
+    background-color: #FFAB5B; /* Orange button for actions */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px; /* Spacing between buttons if necessary */
+}
+
+a {
+    text-decoration: none;
+    color: #00879E; /* Light blue link for cancellation */
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 10px; /* Spacing between buttons */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    p, button, a {
+        width: 90%;
+        padding: 10px;
+    }
+}

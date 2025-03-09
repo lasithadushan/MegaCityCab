@@ -8,7 +8,7 @@
 <body>
     <!-- Back Button Positioned at the Top Right -->
     <div class="back-button-container">
-        <button class="back-button" type="button" onclick="window.location.href='managerdashboard.jsp'">Back</button>
+       
     </div>
 
     <h2>Car List</h2>

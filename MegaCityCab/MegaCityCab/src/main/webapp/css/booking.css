@@ -15,7 +15,7 @@ body {
 
 /* Form Container */
 form {
-    background-color: #FFFFFF; /* White background for the form */
+    background-color: #FFFFFF; /* White background */
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@ form {
 /* Heading */
 h2 {
     font-size: 28px;
-    color: #003092; /* Dark blue for heading */
+    color: #003092; /* Dark blue */
     margin-bottom: 30px;
 }
 
@@ -36,7 +36,7 @@ label {
     display: block;
     font-size: 16px;
     margin-bottom: 8px;
-    color: #00879E; /* Teal color for labels */
+    color: #00879E; /* Teal */
 }
 
 /* Select Fields */
@@ -47,8 +47,8 @@ select {
     border: 2px solid #00879E;
     border-radius: 6px;
     margin-bottom: 20px;
-    background-color: #FFF2DB; /* Light background for selects */
-    color: #003092; /* Text color */
+    background-color: #FFF2DB;
+    color: #003092;
 }
 
 /* Input Fields */
@@ -59,27 +59,50 @@ input[type="text"] {
     border: 2px solid #00879E;
     border-radius: 6px;
     margin-bottom: 20px;
-    background-color: #FFF2DB; /* Light background for inputs */
-    color: #003092; /* Text color */
+    background-color: #FFF2DB;
+    color: #003092;
     text-align: center;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 /* Submit Button */
 button[type="submit"] {
-    background-color: #003092; /* Dark blue for the button */
-    color: #FFF2DB; /* Light text */
+    background-color: #003092; /* Dark blue */
+    color: #FFF2DB;
     padding: 12px 20px;
     font-size: 18px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    width: 100%;
+    width: 48%;
     transition: background-color 0.3s ease;
 }
 
-/* Hover Effect for Button */
 button[type="submit"]:hover {
-    background-color: #FFAB5B; /* Orange background on hover */
+    background-color: #FFAB5B; /* Warm orange */
+}
+
+/* Back Button */
+.back-button {
+    background-color: #00879E; /* Teal */
+    color: #FFF2DB;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 48%;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #FFAB5B; /* Warm orange */
 }
 
 /* Error Message */
@@ -89,7 +112,7 @@ button[type="submit"]:hover {
     margin-top: 10px;
 }
 
-/* Styling for the dropdown select options */
+/* Select Dropdown Options */
 select option {
-    color: #003092; /* Dark blue for option text */
+    color: #003092; /* Dark blue */
 }

@@ -85,6 +85,7 @@
             }
         }
     %>
-
+<button type="button" onclick="window.location.href='homedashboard.jsp'">Back</button>
+        </div>
 </body>
 </html>

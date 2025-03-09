@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.List" %>
 <%@ page import="dao.LocationDAO" %>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Book a Ride</title>
@@ -12,17 +13,13 @@
             var destination = document.getElementById("destination").value;
 
             if (pickup && destination) {
-                // Send the pickup and destination locations to the backend
                 $.ajax({
                     url: '/MegaCityCab/CalculateFareServlet',
                     method: 'GET',
                     data: { pickup: pickup, destination: destination },
                     success: function(response) {
-                        // Log the response to ensure the fare is correctly received
                         console.log("Response from server:", response);
-
                         if(response && response.fare) {
-                            // Update the fare input field
                             document.getElementById("fare").value = response.fare.toFixed(2);
                         } else {
                             alert('Fare calculation failed. Please try again.');
@@ -36,24 +33,23 @@
             }
         }
 
-        // Prevent form submission if the fare is not calculated
         function validateForm() {
             var fare = document.getElementById("fare").value;
             if (!fare || fare === "") {
                 alert("Please calculate the fare before booking.");
-                return false; // Prevent form submission
+                return false;
             }
-            return true; // Allow form submission
+            return true;
         }
     </script>
 </head>
 <body>
- 
     <form action="/MegaCityCab/BookingServlet" method="post" onsubmit="return validateForm()">
-       <h2>Book a Ride</h2>
+        <h2>Book a Ride</h2>
+        
         <label for="pickup">Pickup Location:</label>
         <select id="pickup" name="pickup" onchange="calculateFare()" required>
-            <%
+            <% 
                 LocationDAO locationDAO = new LocationDAO();
                 List<String> locations = locationDAO.getLocationNames();
                 for (String location : locations) {
@@ -64,9 +60,7 @@
 
         <label for="destination">Destination:</label>
         <select id="destination" name="destination" onchange="calculateFare()" required>
-            <%
-                for (String location : locations) {
-            %>
+            <% for (String location : locations) { %>
             <option value="<%= location %>"><%= location %></option>
             <% } %>
         </select>
@@ -74,7 +68,10 @@
         <label for="fare">Estimated Fare (Rs):</label>
         <input type="text" id="fare" name="fare" readonly>
 
-        <button type="submit">Book Now</button>
+        <div class="button-group">
+            <button type="submit">Book Now</button>
+            <button type="button" class="back-button" onclick="window.location.href='homedashboard.jsp'">Back</button>
+        </div>
     </form>
 </body>
 </html>

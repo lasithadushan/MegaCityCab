@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* Color Variables */
+:root {
+    --dark-blue: #003092;
+    --teal: #00879E;
+    --warm-orange: #FFAB5B;
+    --soft-cream: #FFF2DB;
+    --white: #fff;
+    --shadow-dark: rgba(0, 0, 0, 0.2);
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--soft-cream);
+    color: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+form {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow-dark);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    font-size: 26px;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+label {
+    font-weight: bold;
+    color: var(--teal);
+    display: block;
+    text-align: left;
+    margin: 12px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--teal);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: var(--warm-orange);
+    box-shadow: 0 0 10px var(--warm-orange);
+}
+
+/* Submit Button */
+button {
+    background: var(--dark-blue);
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--warm-orange);
+    box-shadow: 0 5px 10px var(--shadow-dark);
+}
